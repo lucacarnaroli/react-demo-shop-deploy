@@ -1,0 +1,8 @@
+export { CartPage } from './cart/CartPage'
+export { CheckoutPage } from './checkout/CheckoutPage'
+export { ShopPage } from './shop/ShopPage'
+export { CmsPage } from './cms/CmsPage'
+export { CmsOrderPage } from './cms/orders/CmsOrderPage'
+export { CmsProductPage } from './cms/products/CmsProductPage'
+export { LoginPage } from './login/LoginPage'
+export { ThanksPage } from './thanks/ThanksPage'

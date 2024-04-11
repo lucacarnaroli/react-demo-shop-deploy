@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* @apply bg-gradient-to-tl from-slate-100 to-blue-100 text-white bg-fixed h-full */
+}
+
+.title{
+    @apply font-extrabold my-3 text-white text-[2rem] text-center lg:text-[17rem] lg:fixed lg:bottom-0 lg:z-0 lg:rotate-[270deg] lg:w-96 lg:-left-12 lg:opacity-30 lg:pointer-events-none
+}
+
+.page {
+    @apply max-w-screen-lg mx-auto pt-24 
+}
+.page-sm {
+    @apply max-w-screen-sm mx-auto
+}
+
+/* Forms */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"]
+{
+    @apply text-black
+}
+
+textarea.error,
+input[type="text"].error,
+input[type="password"].error,
+input[type="email"].error,
+input[type="number"].error
+{
+    @apply bg-red-300
+}
+
+/* Button */
+.btn {
+    @apply px-5 py-2 rounded-lg text-center text-sm font-semibold disabled:opacity-30 transition
+}
+
+.btn.dark {
+    @apply bg-slate-700 hover:bg-slate-500 text-white
+}
+.btn.danger {
+    @apply bg-red-700 hover:bg-red-500 text-white
+}
+.btn.primary {
+    @apply bg-sky-200 hover:bg-sky-300 text-black
+}
+.btn.accent {
+    @apply bg-pink-500 hover:bg-pink-400 text-white
+}
+.btn.success {
+    @apply bg-green-500 hover:bg-green-400 text-white font-medium
+}
+
+.btn.outline {
+    @apply border border-gray-300 hover:bg-sky-100
+}
+.btn.lg {
+    @apply text-2xl
+}
+
+/* Table */
+.table-auto th,
+.table-auto td {
+    @apply border-b border-b-blue-200 py-4 px-2
+}
+.table-auto.hover tr:hover {
+    @apply bg-blue-100
+}
