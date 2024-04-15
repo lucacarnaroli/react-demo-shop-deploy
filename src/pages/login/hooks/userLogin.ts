@@ -7,7 +7,6 @@ export function userLogin() {
     function changeHandler(e: ChangeEvent<HTMLInputElement>){
         const inputName = e.currentTarget.name
         const inputValue = e.currentTarget.value
-        console.log(inputName);
         setForm(state => ({ ...state, [inputName]: inputValue}))
     }
 

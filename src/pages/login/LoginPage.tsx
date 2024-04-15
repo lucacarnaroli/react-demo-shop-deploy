@@ -23,7 +23,6 @@ export function LoginPage() {
 
     function doLogin(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
-        console.log(form);
         login(form.username, form.password)
     }
 
