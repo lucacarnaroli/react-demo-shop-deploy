@@ -3,6 +3,7 @@ import { NavBar, PrivateRoute } from '@/shared/'
 import { ShopPage, CartPage, CheckoutPage, ThanksPage, LoginPage, CmsPage, CmsProductPage, CmsOrderPage } from "./pages"
 
 function App() {
+  
   return (
     <BrowserRouter>
       <NavBar />
@@ -31,3 +32,5 @@ function App() {
 }
 
 export default App
+
+
